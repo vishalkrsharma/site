@@ -1,47 +1,83 @@
 *{
     scroll-behavior: smooth;
-}
-body{
-    font-family:'Courier New', Courier, monospace;
-    width: 80%;
-    margin: auto;   
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 header{
     display:flex;
     flex-direction: row;
     justify-content:space-between;
-    align-items:center;
-    width:90%;
     flex-wrap: wrap;
+    align-items:center;
+    width:100%;
+    background-color: #393e46;
+    color: white;
 }
 
-nav > a {
+body{
+    margin:0;
+}
+
+.brand{
+    margin:1% 2%; 
+}
+
+header > h1 > a {
     text-decoration: none;
-    color:black;
+    margin:0 10px;
+    color:white;
+}
+
+nav{
+    margin:2%;
+}
+
+nav > a  {
+    text-decoration: none;
+    margin:0 10px;
+    color:white;
 }
 
 .title{
-    text-align: center;
-    padding: 15% 5% 15% 5%;
+    padding: 5%;
     display:flex;
     flex-direction: column;
+    align-items:center;
     justify-content:space-around;
+    background-color: #00adb5;
 }
 
 .title > h1{
-    margin: 10%;
+    margin-bottom: 0;
+    font-size:100px;
+}
+
+.title > h2{
+    margin-top:0;
+}
+
+.title > a {
+    text-decoration: none;
+    color:black;
+    margin:0 10px;
+    font-weight: 400;
+}
+
+.title > a > button{
+    width: 100%;
 }
 
 .boxes{
     display:flex;
-    padding: 15% 0 15% 0;
+    padding: 5%;
     flex-direction: row;
     justify-content:space-around;
     flex-wrap: wrap;
+    background-color: #aad8d3;
+}
+
+.content{
+    margin:0;
 }
 
 .boxes > h3 {
@@ -59,24 +95,35 @@ nav > a {
     display: flex;
     align-items: center;
     flex-direction: column;
+    transition: .5s;
+}
+
+.box:hover{
+    transform: scale(1.1)
 }
 
 .about-us{
     text-align: center;
-    padding: 15% 5% 15% 5%;
+    padding: 5%;
+    background-color: #eeeeee;
 }
 
 .about-us > h3 {
-    margin:10%;
+    margin:4%;
+}
+
+.about-us > p {
+    margin:4%;
 }
 
 
 .contact-us{
-    padding: 15% 5% 15% 5%;
+    padding: 5%;
     display:flex;
     flex-direction: column;
     justify-content:space-between;
     align-items:center;
+    background-color: #f8f5f1;
 }
 
 form{
