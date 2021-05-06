@@ -154,8 +154,7 @@ button{
 
 @media(max-width: 1000px){
 
-    header > h1 {
-        width:100%;
+    header > .brand {
         text-align:center;
     }
 
@@ -173,7 +172,15 @@ button{
     }
 
     form{
-        width:160%;
+        width:100%;
+    }
+    
+    form > input[type="text"] {
+        width:70%;
+    }
+
+    form > textarea {
+        width: 70%;
     }
 
 }
