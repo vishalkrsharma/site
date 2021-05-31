@@ -1,0 +1,22 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "description": "https://vishalkrsharma.github.io/site/",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vishalkrsharma/site.git"
+  },
+  "author": "vishalkrsharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vishalkrsharma/site/issues"
+  },
+  "homepage": "https://github.com/vishalkrsharma/site#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.0"
+  }
+}

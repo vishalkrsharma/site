@@ -1,51 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>site</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>site</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div class="phone-no"><p>Contact No.: 0000000000</p></div>
+        <header>
             <h1 class="brand"><a href="#">BRAND</a></h1>
-        <nav>
-            <a href="#boxes">Content</a>
-            <a href="#about-us">About Us</a>
-            <a href="#contact-us">Contact Us</a>
-        </nav>
-    </header>
-    <main>
-        <div class="title">
-            <h1>TITLE</h1>
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, obcaecati.</h2>
-            <a href="#about-us"><button>Get Started</button></a>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere optio non debitis deleniti in minus porro, aut illum enim veniam! Quo quaerat expedita, eum in iure mollitia minus iste ab.</p>
-        </div>
-        <div class="boxes" id="boxes">
-            <h3 class="content">Content</h3>
-            <div class="box"><p>Instagram Post 1</p></div>
-            <div class="box"><p>Instagram Post 2</p></div>
-            <div class="box"><p>Instagram Post 3</p></div>
-            <div class="box"><p>Instagram Post 4</p></div>
-            <div class="box"><p>Instagram Post 4</p></div>   
-        </div>
-        <div class="about-us" id="about-us">
-            <h3>About Us</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas totam, vel quis facilis officiis facere laboriosam aut, iure accusamus, laudantium ut doloremque sunt nam error itaque reprehenderit repellendus ab. Perferendis.</p>
-        </div>
-        <div class="contact-us" id="contact-us">
-            <h3>Contact Us</h3>
-            <form action="" method="post">
-                <input type="text" name="name" id="name" placeholder="Your Name" required>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message..." required></textarea>
-                <br>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-    </main>
-</body>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#content">Content</a>
+                <a href="#about-us">About Us</a>
+                <a href="#contact-us">Contact Us</a>
+            </nav>
+        </header>
+        <main>
+            <div class="title">
+                <div class="float">
+                    <h1 class="title-heading">
+                        <span class="title-heading-primary">TITLE</span>
+                        <br />
+                        <span class="title-heading-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, obcaecati.</span>
+                    </h1>
+                    <a href="#about-us">Get Started</a>
+                    <span class="title-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere optio non debitis deleniti in minus porro, aut illum enim veniam! Quo
+                        quaerat expedita, eum in iure mollitia minus iste ab.
+                    </span>
+                </div>
+            </div>
+            <div class="content content-1" id="content">
+                <h3 class="content-heading">Content</h3>
+                <div class="flexbox">
+                    <div class="card card-1"><p class="card-heading">Instagram Post 2</p></div>
+                    <div class="card card-1"><p class="card-heading">Instagram Post 1</p></div>
+                    <div class="card card-1"><p class="card-heading">Instagram Post 3</p></div>
+                    <div class="card card-1"><p class="card-heading">Instagram Post 4</p></div>
+                </div>
+            </div>
+            <div class="people" id="people">
+                <h3 class="people-heading">People</h3>
+                <div class="flexbox">
+                    <div class="card card-2">
+                        <div class="pic"></div>
+                        <p class="card-heading">People 1</p>
+                    </div>
+                    <div class="card card-2">
+                        <div class="pic"></div>
+                        <p class="card-heading">People 2</p>
+                    </div>
+                    <div class="card card-2">
+                        <div class="pic"></div>
+                        <p class="card-heading">People 3</p>
+                    </div>
+                    <div class="card card-2">
+                        <div class="pic"></div>
+                        <p class="card-heading">People 4</p>
+                    </div>
+                </div>
+            </div>
+            <div class="register">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, dolorem.</p>
+                <a href="#" type="button">Register</a>
+            </div>
+            <div class="free" id="free">
+                <h3 class="free-heading">Looking for a free session???</h3>
+                <form action="" method="post">
+                    <div class="information">
+                        <input type="text" name="name" id="name" placeholder="Your Name" required />
+                        <input type="email" name="email" id="email" placeholder="Email" />
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="lists">
+                <div class="list-div">
+                    <h3 class="list-heading">Heading</h3>
+                    <ul class="list">
+                        <li>List 1</li>
+                        <li>List 2</li>
+                        <li>List 3</li>
+                        <li>List 4</li>
+                        <li>List 5</li>
+                    </ul>
+                </div>
+                <div class="list">
+                    <h3 class="list-heading">Heading</h3>
+                    <ul class="list">
+                        <li>List 1</li>
+                        <li>List 2</li>
+                        <li>List 3</li>
+                        <li>List 4</li>
+                        <li>List 5</li>
+                    </ul>
+                </div>
+                <div class="list">
+                    <h3 class="list-heading">Heading</h3>
+                    <ul class="list">
+                        <li>List 1</li>
+                        <li>List 2</li>
+                        <li>List 3</li>
+                        <li>List 4</li>
+                        <li>List 5</li>
+                    </ul>
+                </div>
+                <div class="list">
+                    <h3 class="list-heading">Heading</h3>
+                    <ul class="list">
+                        <li>List 1</li>
+                        <li>List 2</li>
+                        <li>List 3</li>
+                        <li>List 4</li>
+                        <li>List 5</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="copyright">
+                <p class="copyright-message">@Copyright.</p>
+            </div>
+        </footer>
+    </body>
 </html>
