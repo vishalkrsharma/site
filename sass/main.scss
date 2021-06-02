@@ -94,9 +94,7 @@ header {
 
     & nav {
         & a {
-            &:not(:last-child) {
-                margin-right: 3rem;
-            }
+            padding: 0.5rem 1rem;
             font-size: 2rem;
             text-decoration: none;
             color: $color-white;
@@ -115,16 +113,16 @@ main {
         background-image: url(../img/title-img.jpg);
         background-size: cover;
         background-position: center;
-        display: flex;
-        flex-direction: row-reverse;
 
         & .float {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: space-around;
-            width: 50%;
+            width: 60%;
             text-align: center;
+            margin: auto;
+            margin-right: 0;
 
             & .title-heading {
                 margin: 2rem;
@@ -306,9 +304,7 @@ main {
             & .information {
                 width: 100%;
                 margin-bottom: 3rem;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
+                text-align: center;
 
                 & input {
                     @include form-border;
@@ -332,7 +328,7 @@ main {
         }
     }
 
-    & .lists {
+    & .lists-div {
         @include margin-secondary;
         @include mp;
         @include border-radius;
@@ -371,37 +367,108 @@ footer {
     }
 }
 
-@media (max-width: 1000px) {
-    .body {
-        width: 100%;
-    }
-
-    .phone-no {
-        margin-left: 50%;
-    }
-
-    header .brand {
-        text-align: center;
-    }
-
-    .cards {
-        flex-wrap: wrap;
+@media only screen and (max-width: 768px) {
+    @mixin mp {
+        padding: 3rem;
     }
 
     header {
-        justify-content: space-between;
-        flex-direction: column;
+        @include mp;
+
+        display: block;
+        text-align: center;
+
+        & nav {
+            padding: 2rem 2rem 0 2rem;
+            display: grid;
+            grid-template-columns: auto auto;
+        }
     }
 
-    form {
-        width: 100%;
+    main {
+        & .title {
+            @include mp;
+
+            display: block;
+            margin: auto;
+
+            & .float {
+                width: 100%;
+                margin: 0;
+            }
+        }
+
+        & .content {
+            @include mp;
+
+            & .content-heading {
+                margin-bottom: 3rem;
+            }
+        }
+
+        & .people {
+            @include mp;
+
+            & .flexbox {
+                :not(:first-child) {
+                    margin-top: 6rem;
+                }
+            }
+        }
+
+        & .register {
+            @include mp;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            & a {
+                margin-top: 2rem;
+                width: 60%;
+            }
+        }
+
+        & .lists-div {
+            @include mp;
+            display: grid;
+            grid-template-columns: auto auto;
+
+            & .lists {
+                width: 50%;
+
+                & .list {
+                    & li {
+                        width: 60px;
+                    }
+                }
+            }
+        }
+
+        & .free {
+            & form {
+                width: 100%;
+
+                & .information {
+                    & .input-name {
+                        margin-left: 0;
+                        margin-right: 0;
+                        width: 90%;
+                    }
+
+                    & .input-email {
+                        margin-left: 0;
+                        margin-right: 0;
+                        width: 90%;
+                    }
+                }
+            }
+        }
     }
 
-    form > input[type='text'] {
-        width: 70%;
-    }
-
-    form > textarea {
-        width: 70%;
+    & footer {
+        & .copyright {
+            margin-left: 60%;
+        }
     }
 }

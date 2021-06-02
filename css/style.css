@@ -44,11 +44,10 @@ header {
       text-decoration: none;
       color: #fff; }
   header nav a {
+    padding: 0.5rem 1rem;
     font-size: 2rem;
     text-decoration: none;
     color: #fff; }
-    header nav a:not(:last-child) {
-      margin-right: 3rem; }
 
 main {
   margin: 2rem; }
@@ -58,16 +57,16 @@ main {
     border-radius: 8px;
     background-image: url(../img/title-img.jpg);
     background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: row-reverse; }
+    background-position: center; }
     main .title .float {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
-      width: 50%;
-      text-align: center; }
+      width: 60%;
+      text-align: center;
+      margin: auto;
+      margin-right: 0; }
       main .title .float .title-heading {
         margin: 2rem; }
         main .title .float .title-heading .title-heading-primary {
@@ -205,9 +204,7 @@ main {
       main .free form .information {
         width: 100%;
         margin-bottom: 3rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly; }
+        text-align: center; }
         main .free form .information input {
           border: solid 0.2rem #eeeeee;
           border-radius: 1rem;
@@ -224,7 +221,7 @@ main {
         background-color: white;
         width: 10rem;
         height: 4rem; }
-  main .lists {
+  main .lists-div {
     margin: 2rem 0;
     padding: 6rem;
     border-radius: 8px;
@@ -233,10 +230,10 @@ main {
     flex-direction: row;
     justify-content: space-evenly;
     background-image: linear-gradient(to right, #81c1f5, #6183f3); }
-    main .lists .list-heading {
+    main .lists-div .list-heading {
       font-size: 3rem;
       margin-bottom: 2rem; }
-    main .lists .list {
+    main .lists-div .list {
       padding-left: 1.5rem;
       font-size: 2rem;
       list-style: none;
@@ -250,21 +247,55 @@ footer .copyright {
   footer .copyright .copyright-message {
     font-size: 2rem; }
 
-@media (max-width: 1000px) {
-  .body {
-    width: 100%; }
-  .phone-no {
-    margin-left: 50%; }
-  header .brand {
-    text-align: center; }
-  .cards {
-    flex-wrap: wrap; }
+@media only screen and (max-width: 768px) {
   header {
-    justify-content: space-between;
-    flex-direction: column; }
-  form {
+    padding: 3rem;
+    display: block;
+    text-align: center; }
+    header nav {
+      padding: 2rem 2rem 0 2rem;
+      display: grid;
+      grid-template-columns: auto auto; }
+  main .title {
+    padding: 3rem;
+    display: block;
+    margin: auto; }
+    main .title .float {
+      width: 100%;
+      margin: 0; }
+  main .content {
+    padding: 3rem; }
+    main .content .content-heading {
+      margin-bottom: 3rem; }
+  main .people {
+    padding: 3rem; }
+    main .people .flexbox :not(:first-child) {
+      margin-top: 6rem; }
+  main .register {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main .register a {
+      margin-top: 2rem;
+      width: 60%; }
+  main .lists-div {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: auto auto; }
+    main .lists-div .lists {
+      width: 50%; }
+      main .lists-div .lists .list li {
+        width: 60px; }
+  main .free form {
     width: 100%; }
-  form > input[type='text'] {
-    width: 70%; }
-  form > textarea {
-    width: 70%; } }
+    main .free form .information .input-name {
+      margin-left: 0;
+      margin-right: 0;
+      width: 90%; }
+    main .free form .information .input-email {
+      margin-left: 0;
+      margin-right: 0;
+      width: 90%; }
+  footer .copyright {
+    margin-left: 60%; } }
